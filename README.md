@@ -97,16 +97,3 @@ Sum of Digits   : 14
 4. **Header Inclusions:** Only include standard libraries that are strictly necessary (`<stdio.h>`, `<stdlib.h>`, etc.).
 5. **Code Comments:** Use docstrings or comments before custom functions to explain inputs, outputs, and edge-case behavior.
 ---
-
-## Submission Guidelines
-
-1. Ensure each `.c` source file contains a header comment with:
-   - Student Name
-   - Roll / Registration Number
-   - Date of Experiment
-2. Test code against edge cases (e.g., `0`, negative values, large numbers).
-3. Push your changes to your assigned Git repository or export the files per your instructor's lab manual directions:
-   ```bash
-   git add .
-   git commit -m "Add solutions for Lab Experiments 1, 2, and 3"
-   git push origin main
