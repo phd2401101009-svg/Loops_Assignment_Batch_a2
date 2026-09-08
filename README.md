@@ -2,20 +2,7 @@
 
 #### 1. Objective
 Write a C program to swap the contents of two integer variables without using a temporary or auxiliary variable.
-
-#### 2. Concept & Logic
-Two common mathematical approaches exist to swap values in place:
-1. **Arithmetic Approach (Addition & Subtraction):**
-   - $a = a + b$
-   - $b = a - b$ (now $b$ receives the initial value of $a$)
-   - $a = a - b$ (now $a$ receives the initial value of $b$)
-   *(Note: Ensure numbers do not exceed integer bounds to prevent arithmetic overflow).*
-2. **Bitwise XOR Approach:**
-   - $a = a \oplus b$
-   - $b = a \oplus b$
-   - $a = a \oplus b$
-#### 3. Sample Test Cases
-
+#### 2. Sample Test Cases
 ##### Test Case 1: Standard Positive Integers
 ```text
 Enter first integer (a): 15
@@ -27,7 +14,6 @@ a = 15, b = 40
 --- After Swapping ---
 a = 40, b = 15
 ```
-
 ##### Test Case 2: Negative & Positive Integers
 ```text
 Enter first integer (a): -25
@@ -39,22 +25,12 @@ a = -25, b = 10
 --- After Swapping ---
 a = 10, b = -25
 ```
-
 ---
-
 ### Experiment 2: Prime Number Checker Function
 
 #### 1. Objective
 Write a C program containing a modular function `int isPrime(int n)` that returns `1` if the number passed into it is prime, and `0` otherwise.
-
-#### 2. Concept & Logic
-A prime number is an integer greater than 1 that has no positive divisors other than 1 and itself.
-- Numbers less than or equal to 1 are **not** prime.
-- 2 and 3 are prime.
-- Even numbers greater than 2 and multiples of 3 can be immediately eliminated.
-- For all other potential factors, check numbers of the form $6k \pm 1$ up to $\lfloor\sqrt{n}
-floor$ ($i 	imes i \le n$).
-#### 3. Sample Test Cases
+#### 2. Sample Test Cases
 
 ##### Test Case 1: Prime Number
 ```text
@@ -79,24 +55,12 @@ Enter an integer to check prime status: 1
 Function returned: 0
 Result: 1 is NOT a prime number.
 ```
-
 ---
-
 ### Experiment 3: Digit Reversal and Sum of Digits
 
 #### 1. Objective
 Write a C program that takes an integer from the user, reverses its digits, and computes the sum of its constituent digits.
-
-#### 2. Concept & Logic
-- Extract the last digit using the modulo operator: `digit = n % 10`.
-- Add `digit` to a cumulative `sum` variable.
-- Append `digit` to the reversed number: `reversed = (reversed * 10) + digit`.
-- Truncate the last digit using integer division: `n = n / 10`.
-- Repeat until $n = 0$.
-- Handle negative integers appropriately by preserving sign or computing digit sum on the absolute magnitude.
-
-#### 3. Sample Test Cases
-
+#### 2. Sample Test Cases
 ##### Test Case 1: Positive Integer
 ```text
 Enter an integer: 54321
@@ -125,7 +89,6 @@ Reversed Number : -284
 Sum of Digits   : 14
 ```
 ---
-
 ## Best Coding Practices & Guidelines
 
 1. **Meaningful Variable Names:** Avoid single-letter variable names where possible, except for standard loop indices (`i`, `j`).
